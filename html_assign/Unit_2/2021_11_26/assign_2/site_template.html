@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site Template</title>
+    <style>
+        .container
+        {
+            display: grid;
+            grid-template-rows: 40px 400px;
+            grid-template-columns:repeat(12,1fr);
+            width: 50%;
+            margin: auto;
+            grid-gap: 20px 30px;
+            grid-template-areas: 
+            "h h h h h h h h h h h h"
+            "m m m m c c c c c c c c";
+        }
+        .container>div:nth-child(1)
+        {
+            grid-area: h;
+            background-color: red;
+            border-radius: 10px;
+        }
+        .container>div+div
+        {
+            grid-area: m;
+            background-color: greenyellow;
+            border-radius: 10px;
+        }
+        .container>div:last-child   
+        {
+            grid-area: c;
+            background-color: teal;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+</body>
+</html>

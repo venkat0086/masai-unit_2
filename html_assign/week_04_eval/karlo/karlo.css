@@ -1,0 +1,41 @@
+#btn {
+  background-color: blue;
+  border: 0;
+  color: white;
+  border-radius: 10px;
+  font-weight: bold;
+}
+#btn:hover {
+  background-color: white;
+  color: blue;
+  cursor: pointer;
+}
+body {
+  background-color: rgb(117, 252, 218);
+}
+#main {
+  display: flex;
+  width: 80%;
+  margin: auto;
+  justify-content: space-around;
+}
+tr {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px -50px 36px -28px inset;
+  border-radius: 5px;
+}
+th,
+td {
+  text-align: center;
+  padding: 8px 25px;
+}
+
+#main > #left > div {
+  font-size: 20px;
+  font-weight: bold;
+}
+#main > #left > input,
+select,
+textarea {
+  padding: 8px 20px;
+  margin-bottom: 25px;
+}

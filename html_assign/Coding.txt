@@ -1,0 +1,65 @@
+// Create an object with a key called the radius
+// The object must have 2 methods, perimeter, and area that returns the respective values for the given radius
+
+var circle={ 
+  radius:[],
+  area:function(r)
+  {
+    var area=3.14*(r*r);
+    return area;
+  },
+  perimeter:function(p)
+  {
+    var peri=2*3.14*p;
+    return peri;
+  }
+  };
+  console.log(circle.area(2));
+  console.log(circle.perimeter(3));
+
+
+
+// You visited a video game shop and there you find different categories of games having different prices. The available categories in the store are shooting, racing, fighting, sports and puzzles.
+// Create an Object that has the name, category and price of different games in an array with the key called data.
+// Create a method for that object which takes the category as a parameter and returns the count of games of that category.
+// Create a method for that object which takes the category and price as a parameter and returns the array of names of those games of a given category having a price greater than the given price. if the game doesn't exist, it returns "NA"
+
+var obj={
+data:{
+  name:["venkat"],
+  category:["shooting","racing","fighting","sports","puzzles"],
+  price:[1000,2000,1500,2500,200]
+},
+cate:function()
+{
+   var count=this.data.category.length;
+   return count;
+}
+};
+
+console.log(obj.cate());
+
+
+
+function check(str,ch)
+{
+  var n=str.length;
+  for(i=0;i<n;i++)
+  {
+    var count=0;
+    for(j=0;j<n;j++)
+    {
+      if(str[i]==ch[j])
+      {
+        count++;
+      }
+    }
+  }
+  if(count==0)
+  return false;
+  else
+  return true;
+}
+var string="Masai School";
+console.log(check(string,"hool"));
+console.log(check(string,"aas"));

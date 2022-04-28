@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pricing</title>
+    <style>
+        .container
+        {
+            display: grid;
+            width:50%;
+            margin: auto;
+            grid-template-rows: 200px 300px;
+            grid-gap: 10px;
+        }
+        .container>div:nth-child(1)
+        {
+            width: 60%;
+            margin: auto;
+            text-align: center;
+        }
+        p{
+            color: grey;
+        }
+        .container>div:nth-child(2)
+        {
+            display: grid;
+            grid-template-columns: 200px 200px 200px;
+            justify-content: space-around;
+        }
+        .container>div>div
+        {
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+            border-radius: 5px;
+            text-align: center;
+        }
+        .container>div>div>div
+        {
+            color: green;
+            font-size: 27px;
+            font-weight: bold;
+        }
+        span
+        {
+            color: grey;
+        }
+        #color1
+        {
+            color: orange;
+        }
+        #color2
+        {
+            color: blue;
+        }
+        button
+        {
+            padding: 10px 30px;
+            border-radius: 5px;
+            border-color:blue;
+            color:blue;
+            font-weight: bold;
+        }
+        button:hover
+        {
+            background-color: blue;
+            cursor: pointer;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div>
+            <h1>Choose a plan that right for your business</h1>
+            <p>We collect reviews from our users so you can get an honest opinion of what an experience with our 
+                website are really like!
+            </p>
+        </div>
+        <div>
+            <div>
+                <h3>Starter Plan</h3>
+                <div>Free</div>
+                <span>Per Month</span>
+                <p>We collect reviews from our users so you can get an honest opinion of what an experience with our 
+                    website</p>
+                <button>Start Now</button>
+            </div>
+            <div>
+                <h3>Business Plan</h3>
+                <div id="color1">$39.00</div>
+                <span>Per Month</span>
+                <p>We collect reviews from our users so you can get an honest opinion of what an experience with our 
+                    website</p>
+                <button>Start Now</button>
+            </div>
+            <div>
+                <h3>Premium Plan</h3>
+                <div id="color2">$59.00</div>
+                <span>Per Month</span>
+                <p>We collect reviews from our users so you can get an honest opinion of what an experience with our 
+                    website</p>
+                <button>Start Now</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Optional-Grid</title>
+    <style>
+        .container
+        {
+            display: grid;
+            grid-template: repeat(3,190px)/repeat(12,1fr);
+            grid-gap: 10px 20px;
+            width: 90%;
+            margin: auto;
+            grid-template-areas:
+            "m m m m m m m f f f f f"
+            "m m m m m m m s s s s s"
+            "m m m m m m m t t t t t" ;
+        }
+        .container>div
+        {
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        }
+        .container>div:nth-child(1)
+        {
+            grid-area: m;
+            display: grid;
+            grid-template-rows: 69% 29%;
+            grid-gap: 2%;
+        }
+        .container>div:nth-child(2)
+        {
+            grid-area: f;
+            display: grid;
+            grid-template-columns: 49% 50%;
+            grid-gap: 1%;
+        }
+        .container>div:nth-child(3)
+        {
+            grid-area: s;
+            display: grid;
+            grid-template-columns: 49% 50%;
+            grid-gap: 1%;
+        }
+        .container>div:nth-child(4)
+        {
+            grid-area: t;
+            display: grid;
+            grid-template-columns: 49% 50%;
+            grid-gap: 1%;
+        }
+        .container>div>div>div
+        {
+            color: crimson;
+            font-weight: bold;
+            font-size: 13px;
+        }
+        div>p
+        {
+            font-size: 12px;
+            color: grey;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div>
+            <div>
+                <img src="https://via.placeholder.com/700X405" alt="img">
+            </div>
+            <div>
+                <div>Technology</div>
+                <h1>The World's first fitness influencer was a Victorian Strongman</h1>
+                <p>by Pete Sariya</p>
+            </div>
+        </div>
+        <div>
+            <div>
+                <img src="https://via.placeholder.com/239X190" alt="img">
+            </div>
+            <div>
+                <div>Technology</div>
+                <h3>Need to rename the James Webb Space Telescope</h3>
+                <p>by Pete Sariya</p>
+            </div>
+        </div>
+        <div>
+            <div>
+                <img src="https://via.placeholder.com/239X190" alt="img">
+            </div>
+            <div>
+                <div>Technology</div>
+                <h3>This striking photos capture the future of human flight</h3>
+                <p>by Pete Sariya</p>
+            </div>
+        </div>
+        <div>
+            <div>
+                <img src="https://via.placeholder.com/239X190" alt="img">
+            </div>
+            <div>
+                <div>Technology</div>
+                <h3>Exploring the Origins of Punk across America with Kid Karate</h3>
+                <p>by Pete Sariya</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

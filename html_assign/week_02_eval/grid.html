@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid</title>
+    <style>
+        body
+        {
+            background-color: silver;
+        }
+        .container
+        {
+            display: grid;
+            border: 5px solid crimson;
+            width: 30%;
+            height: 600px;
+            grid-template-rows: repeat(6,1fr)/repeat(12,1fr);
+            grid-gap: 20px 20px;
+            margin: auto;
+            grid-template-areas: 
+            "h h h h h h h h h h h h"
+            "a a a a a a t1 t1 t1 t1 t1 t1"
+            "a a a a a a t2 t2 t2 t2 t2 t2"
+            "m m m m m m m m m m m m"
+            "m m m m m m m m m m m m"
+            "f f f f f f f f f f f f";
+        }
+        .container>div:nth-child(1)
+        {
+            background-color: #464646;
+            margin: 5px;
+            grid-area: h;
+        }
+        .container>div:nth-child(2)
+        {
+            background-color: #464646;
+            grid-area: a;
+            margin: 5px;
+        }
+        .container>div:nth-child(3)
+        {
+            background-color: #464646;
+            grid-area: t1;
+            margin: 5px;
+        }
+        .container>div:nth-child(4)
+        {
+            background-color: #464646;
+            grid-area: t2;
+            margin: 5px;
+        }
+        .container>div:nth-child(5)
+        {
+            background-color: #464646;
+            grid-area: m;
+            margin: 5px;
+        }
+        .container>div:nth-child(6)
+        {
+            background-color: #464646;
+            grid-area: f;
+            margin: 5px;
+        }
+        .container>div>div
+        {
+            color: white;
+            font-size: 25px;
+            text-align: center;
+            margin-top: 30px;
+            font-weight: bold;
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div> 
+            <div>HEADER</div> 
+        </div>
+        <div>
+            <div>ARTICLE</div>
+        </div>
+        <div>
+            <div>TEXT 1</div>
+        </div>
+        <div>
+            <div>TEXT 2</div>
+        </div>
+        <div>
+            <div>MAIN</div>
+        </div>
+        <div>
+            <div>FOOTER</div>
+        </div>
+    </div>
+</body>
+</html>
